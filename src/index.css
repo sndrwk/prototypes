@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+}
+
+.page-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transform: translateZ(0);
+}
+
+.bear-link {
+  position: fixed;
+  bottom: 6px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.bear-link.inverted {
+  filter: invert(1);
+}
+
+.bear-icon {
+  width: 20px;
+  height: auto;
+}
+
+.home {
+  line-height: 1.1;
+}
+
+.home p {
+  margin: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
